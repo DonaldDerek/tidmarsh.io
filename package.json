@@ -1,0 +1,33 @@
+{
+  "name": "beambotio",
+  "version": "0.0.2",
+  "description": "Controll Raspberry Pi connected sensors via Tweets and Hashtags. Developed at the MIT Media Lab Workshop",
+  "author": {
+    "name": "Donald Derek",
+    "email": "donaldderek.haddad@gmail.com"
+  },
+  "private": false,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "RaspberryPi",
+    "RaspberryPi Camera",
+    "rPi",
+    "Twitter Bot",
+    "Remote Cam",
+    "sensors"
+  ],
+  "dependencies": {
+    "request": "~2.45.0",
+    "ntwitter": "*",
+    "underscore": "~1.7.0",
+    "async": "~0.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DonaldDerek/Beam.io"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
