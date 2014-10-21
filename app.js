@@ -99,12 +99,13 @@ var startEngine = function(watch){
     			var hashtags = data.entities.hashtags;
                 var msg='';
                 if(hashtags[0] != undefined && hashtags[0].text.toLowerCase() == 'tidmarsh'){
-                    for (i=1; i<=14; i++){
+                    for (i=1; i<=12; i++){
                         msg+=watch[i]+" ";
                     }
                     credentials.updateStatus(msg + " @"+name,
                         function (err, data) {
                             console.log('1');
+                            console.log(msg);
                     });
                 }
                 else{
@@ -112,7 +113,6 @@ var startEngine = function(watch){
                     if(hashtags[0] != undefined){
                         var deviceTag = hashtags[0].text;
                         for(i=0; i<watch.length;i++){
-                            console.log(watch[i]);
                             if(watch[i]=='#'+deviceTag) checkDevice = true;
                         }
                     }
