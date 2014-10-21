@@ -60,7 +60,9 @@ _.each(summary.devices, function(device, i){
     clean.push(obj);
 })
 
-
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
 
 //Twitter API Config
 var twit = new twitter(config);
@@ -100,7 +102,7 @@ var startEngine = function(watch){
                 var msg='';
                 if(hashtags[0] != undefined && hashtags[0].text.toLowerCase() == 'tidmarsh' && name !='Beamiobot'){
                     for (i=1; i<=12; i++){
-                        msg+=watch[i]+" ";
+                        msg+=watch[getRandomInt(1,70)]+" ";
                     }
                     credentials.updateStatus(msg + " @"+name,
                         function (err, data) {
