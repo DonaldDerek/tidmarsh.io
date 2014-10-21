@@ -119,6 +119,7 @@ var startEngine = function(watch){
                         }
                     }
                     if(checkDevice){
+                        msg += deviceTag + ": ";
                         for(j=0; j< clean.length;j++){
                             if(clean[j].name == deviceTag){
                                 for(k=0; k<clean[j].sensors.length;k++){
