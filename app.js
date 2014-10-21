@@ -98,7 +98,7 @@ var startEngine = function(watch){
                 console.log(name);
     			var hashtags = data.entities.hashtags;
                 var msg='';
-                if(hashtags[0] != undefined && hashtags[0].text.toLowerCase() == 'tidmarsh'){
+                if(hashtags[0] != undefined && hashtags[0].text.toLowerCase() == 'tidmarsh' && name !='Beamiobot'){
                     for (i=1; i<=12; i++){
                         msg+=watch[i]+" ";
                     }
@@ -108,7 +108,7 @@ var startEngine = function(watch){
                             console.log(msg);
                     });
                 }
-                else{
+                else if(name != 'Beamiobot'){
                     var checkDevice = false;
                     if(hashtags[0] != undefined){
                         var deviceTag = hashtags[0].text;
