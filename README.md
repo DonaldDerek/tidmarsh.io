@@ -1,27 +1,14 @@
-Beam.io
+Tidmarsh.io
 ==========
+Hashtag Query Language (#QL)
 
-Control a Rasperry Pi connected to a Tidmarsh sensor node via serial ports. Developed at the Wamda MIT Media Lab Workshop 2014.
-
-### Hastags
-
-. #BeamIOCam : Will order the pi to capture and image and upload it to Twitter
-. #BeamIOTemp : Will order the pi to capture an image and return the temperature
-. #BeamIOHumidity : Will order the pi to capture an image and return the Humidity
-. #BeamIOPressure : Will order the pi to capture an image and return the Pressure
-. #BeamIOIlluminance : Will order the pi to capture an image and return the Illuminance
+Query sensor nodes from [Chain-API](chain-api.media.mit.edu) with hashtags on twitter
 
 ### Configuration:
 
 Edit the config.js file with your credentials and tokens. Keep it confidential
 
 ```
-	ntwitter:{
-		consumer_key: 'YOUR_CONSUMER_KEY',
-		consumer_secret: 'YOUR_CONSUMER_SECRET',
-		access_token_key: 'ACCESS_TOKEN',
-		access_token_secret: 'ACCESS_TOKEN_SECRET'
-	},
 	tumw:{
 		consumer_key: 'YOUR_CONSUMER_KEY',
 		consumer_secret: 'YOUR_CONSUMER_SECRET',
@@ -33,22 +20,10 @@ Edit the config.js file with your credentials and tokens. Keep it confidential
 ###Installation
 
 ```
-  npm install beambotio
+  git clone https://github.com/DonaldDerek/tidmarsh.io.git
+  cd tidmarsh.io
+  npm install
 ```
-
-###Contributors
-+ [Spencer Russell](https://github.com/ssfrr)
-+ [Donald Derek](https://github.com/DonaldDerek)
-+ [Dr.Ramy El Tarras ](https://twitter.com/ramyeltarras)
-+ [Simon Tadros](https://github.com/evilqubit)
-
-###Mentors
-+ [Spencer Russell](https://github.com/ssfrr)
-+ [Pragun Goyal](http://pragungoyal.com/?/about/)
-+ [Nan Zhao](http://web.media.mit.edu/~nanzhao/)
-
-The conceptual model was designed by [Sherif Mktbi](https://twitter.com/SherifMaktabi)
-
 
 ### License
 
